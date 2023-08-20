@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifica Nacionalidade</title>
+    <style>
+        h1
+        {
+            text-align: center;
+            font: normal;
+            margin-top: 50px;
+
+        }
+        div
+        {
+            text-align: center;
+            font: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificando a nacionalidade</h1>
+    <div id="d1">
+        Informe a sua Nacionalidade: <input type="text" name="txt" id="txt" >
+        <input type="button" value="Gravar" onclick="gravar()">
+    </div>
+    
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <script>
+        var p1 = window.document.querySelector('p#p1')
+        var p2 = window.document.querySelector('p#p2')
+        var nac = window.document.querySelector('input#txt')
+        var div = window.document.querySelector('div#d1')
+        function gravar()
+        {
+         div.innerHTML += `<p>vc digitou ${nac.value}</p>`
+         if(nac.value == 'brasileiro')
+         {
+            div.innerHTML += `<p>vc eh <strong>${nac.value}</strong></p>`
+         }
+         else
+         {
+            div.innerHTML += `<p><strong>${nac.value}</strong> nao e uma nacionalidade valida</p>`
+            div.innerHTML += `<p>Informe uma nacionalidade valida</p>`
+         }
+         }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(214, 245, 235);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+    <script>
+        //DOM - Document Object Model
+    </script>
+</head>
+<body id="corpo">
+    <h1 class="titulo">h1: estudoss com DOM - Document Object Model</h1>
+    <p id="p0">p0: Aqui vai o resultado</p>
+    <p class="p1">p1: Aprender a USAR o <strong>DOM</strong></p>
+    <div id="div">DIV: Clique em mim agora</div>
+    <script>
+       var t1 = window.document.getElementsByTagName('h1')[0]
+       var t2 = document.getElementById('p0')
+       var d = document.querySelector('div#div') //Quando eh classe, usa o . -- div.div
+       var p1 = document.querySelector('p.p1')
+       d.style.background = 'black'
+       t1.style.background = 'red'
+       t1.innerText = 'teste javaScript'
+       p1.style.background = 'blue'
+    </script>
+</body>
+</html>

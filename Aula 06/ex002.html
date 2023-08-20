@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-color: rgb(105, 105, 173);
+            color: white;
+            font: normal 20pt Arial;
+            text-align: center;
+        }
+        h1
+        {
+            color: rgb(243, 243, 206);
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Ola, mundo!</h1>
+    <p>ja me livrei da maldicao</p>
+    <script>
+        //window.confirm('Esta gostando?')
+        var nome = window.prompt('Qual seu nome?')
+        var num1 = Number(window.prompt(`numero 1:`)) 
+        var num2 = Number(window.prompt(`numero 2:`))
+        var s = num1+num2
+        s.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})//Transforma valor para moeda
+        //s.toFixed(4) //Numero de casas decimais
+        //s.replace('.',',')//Troca de caractere
+        window.alert(s)
+        document.write(`teste nome informado: - ${nome.toUpperCase()}, com ${nome.length} letras`)
+        document.write(`A soma de ${num1} e ${num2} eh ${num1+num2} e em reais seria ${s}`)
+        var n1 = 1
+        var n2 = 2
+        document.write(`Mas a soma de ${n1} e ${n2} eh ${n1+n2}`)
+//typeof(a) - Tipo de dados
+    </script>
+</body>
+</html>
